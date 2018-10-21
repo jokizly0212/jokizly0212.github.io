@@ -59,7 +59,7 @@ html, body {
     position: absolute;
     width: 150px;
     height: 150px;
-    z-index: 3;
+    z-index: 10001;
     text-align: center;
     top: 50%;
     left: 50%;
@@ -196,18 +196,19 @@ ul.menu-list {
     display: block;
     margin-left: 200px;
 }
-ul.menu-list li {
+ul.menu-list a {
     cursor: pointer;
     font-size: 35px;
     padding-top: 10px;
     list-style-type: none;
     color: #dddddd;
     font-weight: bold;
+    display: block;
 }
-ul.menu-list li:hover {
+ul.menu-list a:hover {
     color: #FF5851;
 }
-ul.menu-list li.active {
+ul.menu-list a.active {
     color: #FF5851;
     text-decoration: overline;
 }
@@ -558,6 +559,7 @@ section.skills {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.4s;
+    cursor: url('images/hand.svg'), pointer;
 }
 .slider {
     width: 100%;
@@ -586,7 +588,6 @@ section.skills {
     position: relative;
     transition: 0.4s;
     margin-right: 25vh;
-    cursor: all-scroll;
 }
 .project-item.bread-store {
     background: #FF5851;
@@ -1327,7 +1328,7 @@ input[type="checkbox"] + label {
     ul.menu-list {
         margin-left: 250px;
     }
-    ul.menu-list li {
+    ul.menu-list a {
         cursor: pointer;
         font-size: 45px;
         padding-top: 10px;
