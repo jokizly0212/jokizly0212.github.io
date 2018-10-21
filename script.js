@@ -24,7 +24,7 @@ $(function () {
         $('.header, section.skills').addClass('scale');
         $('.social-icons').css('opacity', '0');
         $('section.skills').addClass('changeZindex')
-        $('.menu-list li, .menu-contact').addClass('animated fadeInUp')
+        $('.menu-list a, .menu-contact').addClass('animated fadeInUp')
         $('.menu-question').addClass('animated slideInLeft')
     });
     $('.close-button').click(function () {
@@ -38,7 +38,7 @@ $(function () {
         $('.social-icons').css('opacity', '1');
         $('section.skills').removeClass('changeZindex')
         $('.projects-wrapper').removeClass('changeZindex')        
-        $('.menu-list li, .menu-contact').removeClass('animated fadeInUp')
+        $('.menu-list a, .menu-contact').removeClass('animated fadeInUp')
         $('.menu-question').removeClass('animated slideInLeft')
     });
     $('section.menu-bar').mousemove(function(e) { 

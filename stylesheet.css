@@ -1308,6 +1308,173 @@ input[type="checkbox"] + label {
 
 
 /* CSS FOR RESPONSIVE///////////////////////////////////////// */
+@media only screen and (max-width: 768px) {
+    /* CSS FOR MENU BAR*/
+    .menu-bar img {
+        width: 30px;
+    }
+    .menu-button {
+        left: 10px;
+    }
+    .menu-bar ul.menu {
+        margin-left: 20px;
+        margin-top: -30px;
+    }
+    .menu-section .logo {
+        margin: 5vh 8vh;
+    }
+    .close-button {
+        left: 20px;
+        font-size: 28px;
+    }
+    ul.menu-list {
+        margin-left: 10vh;
+    }
+    ul.menu-list a {
+        font-size: 30px;
+    }
+    .menu-contact {
+        margin-left: 10vh;
+    }
+    .menu-contact span {
+        display: block;
+        font-weight: 400;
+        font-size: 12px;
+    }
+    .menu-question {
+        margin-left: 6vh;
+    }
+    .menu-question span:nth-child(2) {
+        font-size: 14px;
+    }
+    .menu-question span:nth-child(3) {
+        font-size: 20px;
+    }
+    .menu-question span:nth-child(1) {
+        float: left;
+        font-size: 25px;
+        margin-right: 20px;
+    }
+    .social-icons {
+        top: 45%;
+        right: 10px;
+    }
+    .social-icons i {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    /*CSS FOR HEADER*/
+    section.header {
+        width: 100%;
+        height: 100%;
+    }
+    .tlt-name {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        width: 80%;
+    }
+    .logo-white {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 35%;
+        transform: translateX(-50%);
+    }
+    .subtitle {
+        top: 38%;
+        transform: translate(-50%, -50%);
+        font-size: 3vh;
+    }
+    
+    .scale {
+        animation: scale 0.6s forwards;
+    }
+    /*CSS FOR ABOUT*/
+    .container-fluid, .row {
+        padding: 0;
+        margin: 0;
+    }
+    .about.header .logo-white {
+        display: none;
+    }
+    .about.header {
+        width: 100%;
+        height: 100%;
+    }
+    .tlt-about {
+        margin-left: 2.5vh;
+        margin-top: 20%;
+        font-size: 20px;
+    }
+    .about-field {
+        margin-left: 2.5vh;
+        font-size: 30px;
+    }
+    .about-wrapper {
+        top: 0%;
+        transform: translateY(0%);
+    }
+    .col-sm-4, .col-sm-8 {
+        height: 50%;
+    }
+    .about-quote {
+        color: #dddddd;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        opacity: 0;
+        transform-origin: 0% 0%;
+    }
+    .about-quote p b {
+        color: #FF5851;
+    }
+    .about-quote p {
+        margin-left: 150px;
+        font-size: 25px;
+        padding-right: 100px;
+    }
+    .scroll {
+        display: none;
+    }
+    /*CSS FOR PROJECTS*/
+
+    .projects-wrapper {
+        width: 75%;
+        height: 100%;
+    }
+    .project-item {
+        width: 35vh;
+        height: 35vh;
+    }
+    .project-title {
+        z-index: 3;
+        color: #fff;
+        font-size: 2.5vh;
+    }
+    .project-tool {
+        font-size: 0.65em;
+        position: absolute;
+        bottom: 3%;
+        right: 3%;
+        font-weight: 600;
+        color: white;
+        z-index: 3;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .triangle {
+        width: 10vh;
+        height: 8vh;
+    }
+    .thumbnail {
+        width: 9vh;
+        height: 9vh;
+    }
+}
 
 @media screen and (min-width: 1400px) {
 
