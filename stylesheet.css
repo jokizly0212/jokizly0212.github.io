@@ -24,7 +24,7 @@ html, body {
     width: 100%;
     top: 0;
     left: 0;
-    background: #dddddd	;
+    background: #292929	;
     z-index: 1;
     -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
     clip-path: polygon(0 0, 0% 100%, 100% 0);
@@ -45,7 +45,7 @@ html, body {
     width: 100%;
     top: 0;
     left: 0;
-    background: #dddddd;
+    background: #292929;
     z-index: 1;
     -webkit-clip-path: polygon(0 100%, 100% 100%, 100% 0);
     clip-path: polygon(0 100%, 100% 100%, 100% 0);
@@ -204,6 +204,7 @@ ul.menu-list a {
     color: #dddddd;
     font-weight: bold;
     display: block;
+    text-decoration: none;
 }
 ul.menu-list a:hover {
     color: #FF5851;
@@ -504,7 +505,7 @@ section.skills {
     height: 150px;
 }
 .logos img:nth-child(1), .logos img:nth-child(2), .logos img:nth-child(3), .logos img:nth-child(4), .logos img:nth-child(5) {
-    width: 80px;
+    width: 40px;
 }
 .front-end {
     font-size: 4vh;
@@ -522,21 +523,21 @@ section.skills {
     font-weight: 600;
 }
 .logoRow img {
-    width: 12vh;
-    height: 12vh;
+    width: 11vh;
+    height: 11vh;
     float: left;
     margin-right: 40px;
     margin-bottom: 6vh;
 }
 .other {
     margin-right: 2vh;
-    font-size: 2vh;
+    font-size: 1.1em;
     color: #ec3c3c;
     font-weight: 600;
 }
 .other-skill {
     display: inline-block;
-    padding: 1vh 1.5vh;
+    padding: 0.7vh 1.2vh;
     border: solid 1px #dddddd;
     border-radius: 2px;
     margin-right: 1vh;
@@ -549,6 +550,7 @@ section.skills {
 /* CSS FOR PROJECTS///////////////////////////////////////////////////////*/
 .projects.header {
     background: url('images/herobg.jpeg');
+    background-size: cover;
 }
 .projects-wrapper {
     position: absolute;
@@ -1329,12 +1331,9 @@ input[type="checkbox"] + label {
         margin-left: 250px;
     }
     ul.menu-list a {
-        cursor: pointer;
         font-size: 45px;
-        padding-top: 10px;
         list-style-type: none;
         color: #dddddd;
-        font-weight: bold;
     }
     .menu-contact {
         margin-left: 250px;
@@ -1384,6 +1383,15 @@ input[type="checkbox"] + label {
     }
     .about-quote p {
         font-size: 35px;
+    }
+    .logoRow img {
+        width: 12vh;
+        height: 12vh;
+        float: left;
+    }
+    .other {
+        margin-right: 2vh;
+        font-size: 2vh;
     }
 
 }
