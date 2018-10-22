@@ -7,6 +7,7 @@ html, body {
     height: 100%;
     background: #202020;
     overflow: hidden;
+    font-family: 'Rubik', sans-serif;
 }
 .preloader {
     position: fixed;
@@ -57,8 +58,8 @@ html, body {
 }
 .logo-loading {
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 45vh;
+    height: 45vh;
     z-index: 10001;
     text-align: center;
     top: 50%;
@@ -79,26 +80,26 @@ html, body {
     background: rgba(138, 43, 226, 0.02);
   }
   .logo-loading .circle:nth-of-type(1) {
-    width: 120px;
-    height: 100px;
+    width: 13vh;
+    height: 11.5vh;
     animation: rt 6s infinite linear;
     box-shadow: 0 0 1px 0 blueviolet, inset 0 0 10px 0 blueviolet;
   }
   .logo-loading .circle:nth-of-type(2) {
-    width: 100px;
-    height: 110px;
+    width: 12.5vh;
+    height: 13.7vh;
     animation: rt 10s infinite linear;
     box-shadow: 0 0 1px 0 darkviolet, inset 0 0 10px 0 darkviolet;
   }
   .logo-loading .circle:nth-of-type(3) {
-    width: 120px;
-    height: 110px;
+    width: 12vh;
+    height: 13.7vh;
     animation: rt 5s infinite linear;
     box-shadow: 0 0 1px 0 darkmagenta, inset 0 0 10px 0 darkmagenta;
   }
   .logo-loading .circle:nth-of-type(4) {
-    width: 90px;
-    height: 110px;
+    width: 10vh;
+    height: 12.7vh;
     animation: rt 15s infinite linear;
     box-shadow: 0 0 1px 0 magenta, inset 0 0 10px 0 magenta;
   }
@@ -133,14 +134,12 @@ transform: translateX(-100%);
 .menu-button {
     position: fixed;
     top: 50%;
-    left: 20px;
-    height: 100px;
-    line-height: 30px;
+    left: 3vh;
     z-index: 1;
     transform: translateY(-50%);
 }
 .menu-bar img {
-    width: 40px;
+    width: 4.7vh;
     cursor: pointer;
 }
 .menu-bar ul.menu li {
@@ -152,10 +151,10 @@ transform: translateX(-100%);
 }
 .menu-bar ul.menu {
     display: block;
-    font-size: 14px;
+    font-size: 0.8em;
     transform: rotate(-90deg);
-    margin-left: 30px;
-    margin-top: -35px;
+    margin-left: 3.15vh;
+    margin-top: -3.6vh;
 }
 .menu-button:hover li:nth-child(2), .menu-button:hover li:nth-child(4){
     transform: translateY(5px);
@@ -176,17 +175,18 @@ transform: translateX(-100%);
     visibility: hidden;
 }
 .menu-section .logo {
-    width: 55px;
-    height: 55px;
-    margin: 50px 200px;
+    width: 8vh;
+    height: 8vh;
+    margin: 10vh 14vw;
+    margin-bottom: 7vh;
 }
 .close-button {
     color: rgb(61, 61, 223);
     position: absolute;
     top: 50%;
-    left: 40px;
+    left: 3vh;
     transform: translateY(-50%);
-    font-size: 40px;
+    font-size: 3em;
     cursor: pointer;
 }
 .close-button:hover {
@@ -194,15 +194,15 @@ transform: translateX(-100%);
 }
 ul.menu-list {
     display: block;
-    margin-left: 200px;
+    margin-left: 14vw;
 }
 ul.menu-list a {
     cursor: pointer;
-    font-size: 35px;
-    padding-top: 10px;
+    font-size: 2em;
+    padding-top: 1vh;
     list-style-type: none;
     color: #dddddd;
-    font-weight: bold;
+    font-weight: 700;
     display: block;
     text-decoration: none;
 }
@@ -215,46 +215,46 @@ ul.menu-list a.active {
 }
 .menu-contact {
     color: #dddddd;
-    margin-left: 200px;
-    margin-top: 30px;
+    margin-left: 14vw;
+    margin-top: 4vh;
     animation-delay: 0.2s;
 }
 .menu-contact span {
     display: block;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 0.8em;
 }
 span.phone, span.email {
     font-weight: bold;
 }
 .menu-question {
     color: #dddddd;
-    margin-top: 30px;
-    margin-left: 200px;
+    margin-top: 7vh;
+    margin-left: 14vw;
 }
 .menu-question span:nth-child(2) {
     display: block;
     font-style: italic;
-    font-weight: 100;
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 1em;
 }
 .menu-question span:nth-child(3) {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.5em;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.4s;
 }
 .menu-question span:nth-child(1) {
     float: left;
-    font-size: 30px;
-    margin-right: 50px;
+    font-size: 1.8em;
+    margin-right: 3vw;
 }
 .menu-question:hover .arrow  {
     animation: arrow-animation 0.7s infinite;
 }
 .menu-question span:nth-child(3):hover {
-    font-size: 28px;
+    font-size: 1.6em;
 }
 .social-icons {
     position: absolute;
@@ -266,10 +266,10 @@ span.phone, span.email {
 }
 .social-icons i {
     display: block;
-    width: 35px;
-    height: 35px;
+    width: 2.5vw;
+    height: 5vh;
     text-align: center;
-    line-height: 35px;
+    line-height: 5vh;
     cursor: pointer;
     transition: 0.4s;
 }
@@ -316,7 +316,7 @@ section.header {
     width: 4%;
 }
 .subtitle {
-    color: rgb(185, 184, 184);
+    color: rgb(190, 189, 189);
     position: absolute;
     top: 63%;
     left: 48%;
@@ -339,15 +339,15 @@ section.about.header {
     background: #161616!important;
 }
 .tlt-about {
-    margin-left: 150px;
+    margin-left: 8vw;
     margin-top: 5%;
     color: #FF5851;
-    font-size: 25px;
+    font-size: 1.8em;
     font-weight: bold;
 }
 .about-field {
-    margin-left: 150px;
-    font-size: 40px;
+    margin-left: 8vw;
+    font-size: 2.3em;
     letter-spacing: -2px;
     font-weight: bold;
     color: #dddddd;
@@ -377,27 +377,27 @@ section.about.header {
     color: #FF5851;
 }
 .about-quote p {
-    margin-left: 150px;
-    font-size: 25px;
+    margin-left: 8vw;
+    font-size: 1.8em;
     padding-right: 100px;
 }
 .scroll {
     position: fixed;
-    bottom: 10px;
-    left: 150px;
+    bottom: 5%;
+    left: 8vw;
     text-align: center;
 }
 .scroll p {
     color: #dddddd;
     transform: rotate(-90deg);
-    font-size: 13px;
+    font-size: 0.8em;
     letter-spacing: 2px;
     font-weight: bold;
 }
 .scroll i {
     color: #dddddd;
-    font-size: 20px;
-    margin-top: 10px;
+    font-size: 1.2em;
+    margin-top: 1vh;
     animation: scaleY 0.7s infinite alternate;
 }
 .scaleDissappear {
@@ -406,32 +406,18 @@ section.about.header {
 .scaleAppear {
     animation: scaleAppear 1s forwards;
 }
-.know-more {
-    position: absolute;
-    bottom: 80px;
-    left: 40%;
-    cursor: pointer;
-    z-index: 100;
-    opacity: 0;
-    visibility: hidden;
-}
 /* CSS FOR PROGRESS BAR */
 .progress-container {
-    height: 20px;
+    height: 1.7vh;
     position: absolute;
     z-index: 100;
     left: 30%;
-    bottom: 10%;
+    bottom: 12%;
 }
 .progress-bar {
     width: 100%;
     height: 2px;
     background: #FF5851;
-}
-.progress-bar::before {
-    width: 300px;
-    height: 1px;
-    background: gray;
 }
 
 /* CSS FOR SKILLS///////////////////// */
@@ -502,10 +488,7 @@ section.skills {
 }
 .logos {
     width: 100%;
-    height: 150px;
-}
-.logos img:nth-child(1), .logos img:nth-child(2), .logos img:nth-child(3), .logos img:nth-child(4), .logos img:nth-child(5) {
-    width: 40px;
+    height: 10vh;
 }
 .front-end {
     font-size: 4vh;
@@ -523,8 +506,8 @@ section.skills {
     font-weight: 600;
 }
 .logoRow img {
-    width: 11vh;
-    height: 11vh;
+    width: 12%;
+    height: 12%;
     float: left;
     margin-right: 40px;
     margin-bottom: 6vh;
@@ -1366,7 +1349,9 @@ input[type="checkbox"] + label {
         width: 30px;
     }
     .menu-button {
-        left: 10px;
+        top: 8vh;
+        transform: translateY(0);
+        left: 3vh;
     }
     .menu-bar ul.menu {
         margin-left: 20px;
@@ -1397,7 +1382,7 @@ input[type="checkbox"] + label {
         margin-left: 6vh;
     }
     .menu-question span:nth-child(2) {
-        font-size: 14px;
+        font-size: 0.8em;
     }
     .menu-question span:nth-child(3) {
         font-size: 20px;
@@ -1533,48 +1518,43 @@ input[type="checkbox"] + label {
     /* CSS FOR HEADER AND MENU////////////////// */
 
     .menu-button {
-        position: fixed;
-        top: 50%;
-        left: 30px;
-        height: 100px;
-        line-height: 30px;
-        z-index: 1;
-        transform: translateY(-50%);
+        left: 3vh;
     }
     .menu-section .logo {
-        width: 80px;
-        height: 80px;
-        margin: 90px 250px;
+        margin: 10vh 14vw;
     }
     ul.menu-list {
-        margin-left: 250px;
+        margin-left: 14vw;
     }
     ul.menu-list a {
-        font-size: 45px;
+        font-size: 3em;
         list-style-type: none;
         color: #dddddd;
     }
+    .menu-bar ul.menu {
+        font-size: 1em;
+    }
     .menu-contact {
-        margin-left: 250px;
-        margin-top: 30px;
+        margin-left: 14vw;
+        margin-top: 5vh;
     }
     .menu-question {
-        margin-top: 80px;
-        margin-left: 250px;
+        margin-top: 7vh;
+        margin-left: 14vw;
     }
     .menu-question span:nth-child(2) {
-        font-size: 24px;
+        font-size: 1.2em;
     }
     .menu-question span:nth-child(3) {
-        font-size: 35px;
+        font-size: 2em;
     }
     .menu-question span:nth-child(1) {
         float: left;
-        font-size: 40px;
-        margin-right: 50px;
+        font-size: 3em;
+        margin-right: 3vw;
     }
     .menu-question span:nth-child(3):hover {
-        font-size: 38px;
+        font-size: 2.1em;
     }
     .social-icons i {
         width: 45px;
@@ -1604,8 +1584,8 @@ input[type="checkbox"] + label {
         font-size: 35px;
     }
     .logoRow img {
-        width: 12vh;
-        height: 12vh;
+        width: 12%;
+        height: 12%;
         float: left;
     }
     .other {
