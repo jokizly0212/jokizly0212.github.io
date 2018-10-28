@@ -1619,7 +1619,295 @@ input[type="checkbox"] + label {
         margin-top: 2vh;
     }
 }
-@media screen and (min-width: 1367px) {
+@media (max-width: 1024px) and (min-width: 600px) {
+    /* CSS FOR MENU BAR*/
+    .menu-bar img {
+        width: 40px;
+    }
+    .menu-button {
+        top: 8vh;
+        transform: translateY(0);
+        left: 3vh;
+    }
+    .menu-bar ul.menu {
+        display: none;
+    }
+    .menu-section .logo {
+        margin: 5vh 8vh;
+    }
+    .close-button {
+        left: 20px;
+        font-size: 3em;
+    }
+    ul.menu-list {
+        margin-left: 10vh;
+    }
+    ul.menu-list a {
+        font-size: 2.8em;;
+    }
+    .menu-contact {
+        font-size: 1.5em;
+        margin-left: 10vh;
+    }
+    .menu-contact span {
+        display: block;
+        font-weight: 400;
+        font-size: 0.7em;
+    }
+    .menu-question {
+        margin-left: 10vh;
+    }
+    .menu-question span:nth-child(2) {
+        font-size: 1em;
+    }
+    .menu-question span:nth-child(3) {
+        font-size: 2em;
+    }
+    .menu-question span:nth-child(3):hover {
+        font-size: 2.1em;
+    }
+    .menu-question span:nth-child(1) {
+        float: left;
+        font-size: 2em;
+        margin-right: 4vh;
+    }
+    .social-icons {
+        top: 92%;
+        right: 50%;
+        transform: translate(50%, 0);
+    }
+    .social-icons i {
+        font-size: 1.5em;
+        float: left;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    /*CSS FOR HEADER*/
+    section.header {
+        width: 100%;
+        height: 100%;
+    }
+    .tlt-name {
+        position: absolute;
+        top: 45%;
+        left: 52%;
+        transform: translate(-50%, -55%);
+        width: 80%;
+    }
+    .logo-white {
+        position: absolute;
+        top: 7%;
+        left: 80%;
+        width: 12%;
+    }
+    .subtitle {
+        top: 54%;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        font-size: 2em;
+    }
+    
+    .scale {
+        animation: scale 0.6s forwards;
+    }
+    /*CSS FOR ABOUT*/
+    .container-fluid, .row {
+        padding: 0;
+        margin: 0;
+    }
+    .col-sm-8, .col-sm-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .about.header .logo-white {
+        top: 5%;
+        left: 85%;
+        width: 10%;
+    }
+    .about.header {
+        width: 100%;
+        height: 100%;
+    }
+    .tlt-about {
+        margin-left: 8vh;
+        margin-top: 30%;
+        font-size: 2em;
+    }
+    .about-field {
+        margin-left: 8vh;
+        font-size: 3em;
+    }
+    .about-wrapper {
+        top: 0%;
+        transform: translateY(0%);
+    }
+    .col-sm-4, .col-sm-8 {
+        height: 50%;
+    }
+    .about-quote {
+        color: #dddddd;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        opacity: 0;
+        transform-origin: 0% 0%;
+    }
+    .about-quote p b {
+        color: #FF5851;
+    }
+    .about-quote p {
+        margin-left: 150px;
+        font-size: 25px;
+        padding-right: 100px;
+    }
+    .scroll {
+        display: none;
+    }
+    .my-skill-mobile {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        left: 60%;
+        opacity: 1;
+        display: block;
+        visibility: visible;
+        color: #ddd;
+        float: right;
+        transition: 0.8s;
+        font-size: 1.5em;
+    }
+    .my-skill-mobile i {
+        display: inline-block;
+        margin-right: 5px;
+        animation: scaleY 0.7s infinite alternate;
+    }
+    .skills .container-fluid .row .col-sm-6:nth-child(1) {
+        display: none;
+    }
+    .skills .container-fluid .row .col-sm-6:nth-child(2) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    section.skills {
+        width: 100%;
+        height: 100%;
+    }
+    .front-end{
+        font-size: 2.5em;
+        margin-top: 15vh;
+        margin-bottom: 6vh;
+    }
+    .back-end {
+        font-size: 2.5em;
+        margin-bottom: 6vh;
+    }
+    .logoRow img {
+        width: 15%;
+        height: 15%;
+        float: left;
+        margin-right: 4vw;
+        margin-bottom: 8vh;
+    }
+    .other {
+        margin-right: 2vh;
+        font-size: 1.4em;
+        color: #ec3c3c;
+        font-weight: 600;
+    }
+    .other-skill {
+        display: inline-block;
+        padding: 1vh 1.5vh;
+        font-size: 1em;
+        border: solid 1px #dddddd;
+        border-radius: 2px;
+        margin-right: 1vh;
+        margin-bottom: 1vh;
+    }
+
+
+    /*CSS FOR PROJECTS*/
+
+    .projects-wrapper {
+        width: 75%;
+        height: 100%;
+    }
+    .project-item {
+        width: 35vh;
+        height: 35vh;
+    }
+    .project-title {
+        z-index: 3;
+        color: #fff;
+        font-size: 2.5vh;
+    }
+    .project-tool {
+        font-size: 0.65em;
+        position: absolute;
+        bottom: 3%;
+        right: 3%;
+        font-weight: 600;
+        color: white;
+        z-index: 3;
+        opacity: 0;
+        transition: 0.4s;
+    }
+    .triangle {
+        width: 10vh;
+        height: 8vh;
+    }
+    .thumbnail {
+        width: 9vh;
+        height: 9vh;
+    }
+    /*CSS FOR CARD*/
+    .contact-form-wrapper .container-fluid .row .col-sm-6:nth-child(1) {
+        display: none;
+    }
+    .contact-form-wrapper .container-fluid .row .col-sm-6:nth-child(2) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .contact-form-wrapper {
+        top: 60%;
+    }
+    .input-wrap {
+        margin: 20px auto 0;
+    }
+    label {
+        font-size: 1.1em;
+    }
+    i.form-icon {
+        font-size: 1.2em;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 1em;
+    }
+    button {
+        font-size: 1.1em;
+        line-height: 30px;
+        padding: 0px 30px;
+        padding-right: 15px;
+        height: 40px;
+        margin-top: 2vh;
+    }
+    .messages-success {
+        font-size: 0.8em;
+        left: 25%;
+    }
+    h2.contact-title {
+        color: #ddd;
+        font-size: 2.5em;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2vh;
+        margin-top: 1vh;
+    }
+}
+@media screen and (min-width: 1440px) {
     /* CSS FOR HEADER AND MENU////////////////// */
 
     .menu-button {

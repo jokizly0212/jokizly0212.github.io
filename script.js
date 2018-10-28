@@ -118,6 +118,9 @@ $(function () {
                 $('.about.header').css('top', '-100%')
                 $('section.skills').addClass('display')
                 $('section.skills').addClass('slideInDown')
+                $('section.skills').css('display', 'block');
+                $('.contact-form-wrapper').css('display', 'block');
+                $('.projects-wrapper').css('display', 'block');
                 $('section.skills').on('webkitAnimationEnd', function () {
                     $('section.skills').removeClass('slideInDown')
                 })
