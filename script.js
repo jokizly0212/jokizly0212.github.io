@@ -18,12 +18,16 @@ $(function () {
         $('.menu-section').css('left', '0%');
         $('.header, section.skills').css('left', '100%');
         $('.projects-wrapper').css('left', '100%');
-        $('.projects-wrapper').addClass('changeZindex')        
+        $('.projects-wrapper').addClass('changeZindex')  
+        $('.projects-wrapper').css('display', 'none');
         $('.contact-form-wrapper').css('left', '150%');
         $('.contact-form-wrapper').css('scale', '0.35');
+        $('.contact-form-wrapper').css('display', 'none');
         $('.header, section.skills').addClass('scale');
+        $('.my-skill-mobile').css('display', 'none');
         $('.social-icons').css('opacity', '0');
         $('section.skills').addClass('changeZindex')
+        $('section.skills').css('display', 'none');
         $('.menu-list a, .menu-contact').addClass('animated fadeInUp')
         $('.menu-question').addClass('animated slideInLeft')
     });
@@ -33,9 +37,13 @@ $(function () {
         $('.header, section.skills').css('left', '50%');
         $('.projects-wrapper').css('left', '50%');
         $('.contact-form-wrapper').css('left', '50%');
-        $('.contact-form-wrapper').css('scale', '1');        
+        $('.contact-form-wrapper').css('scale', '1'); 
+        $('.my-skill-mobile').css('display', 'inline-block');
         $('.header, section.skills').removeClass('scale');
         $('.social-icons').css('opacity', '1');
+        $('section.skills').css('display', 'block');
+        $('.contact-form-wrapper').css('display', 'block');
+        $('.projects-wrapper').css('display', 'block');
         $('section.skills').removeClass('changeZindex')
         $('.projects-wrapper').removeClass('changeZindex')        
         $('.menu-list a, .menu-contact').removeClass('animated fadeInUp')
@@ -81,7 +89,7 @@ $(function () {
     });
     // script for about more//////////////////////////////////////////
 
-    $('html,body').bind('mousewheel', function(e) {  
+    $('html,body').bind('mousewheel DOMMouseScroll', function(e) {  
         if(e.originalEvent.wheelDelta/120 < 0) {
             counter++
             progressWidth += 5;
@@ -130,6 +138,17 @@ $(function () {
             }
         }
     })
+    $('.my-skill-mobile').click(function () {
+        $('.about.header').css('top', '-100%')
+        $('.my-skill-mobile').css('display', 'none');
+        $('section.skills').addClass('display');
+        $('section.skills').css('display', 'block');
+        $('section.skills').addClass('slideInDown')
+        $('section.skills').on('webkitAnimationEnd', function () {
+            $('section.skills').removeClass('slideInDown')
+        })
+        $('.progress-bar').css('opacity', '0')
+    })
     ////////Script for projects page
 
     $('.center').slick({
@@ -158,8 +177,8 @@ $(function () {
             breakpoint: 300,
             settings: "unslick" //destroy slick
         }]
-    })
-
+    });
+    
 
 
 

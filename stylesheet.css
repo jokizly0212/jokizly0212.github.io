@@ -282,6 +282,7 @@ span.phone, span.email {
 .display {
     opacity: 1!important;
     visibility: visible!important;
+    display: block;
 }
 .changeZindex { 
     z-index: 1!important;
@@ -378,7 +379,7 @@ section.about.header {
 }
 .about-quote p {
     margin-left: 8vw;
-    font-size: 1.8em;
+    font-size: 1.45em;
     padding-right: 100px;
 }
 .scroll {
@@ -405,6 +406,11 @@ section.about.header {
 }
 .scaleAppear {
     animation: scaleAppear 1s forwards;
+}
+.my-skill-mobile {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 /* CSS FOR PROGRESS BAR */
 .progress-container {
@@ -433,6 +439,7 @@ section.skills {
     opacity: 0;
     z-index: 1;
     visibility: hidden;
+    display: none;
 }
 .skill-container {
     position: absolute;
@@ -448,7 +455,7 @@ section.skills {
     height: 100%;
     position: relative;
 }
-.disk1 {
+.disk1, .disk2 {
     position: absolute;
     bottom: 20%;
     left: 10%;
@@ -457,12 +464,7 @@ section.skills {
     transition: 0.4s;
 }
 .disk2 {
-    position: absolute;
-    left: 10%;
-    bottom: 20%;
     z-index: 1;
-    width: 60%;
-    transition: 0.4s;
 }
 .controlDisk {
     position: absolute;
@@ -613,6 +615,9 @@ section.skills {
     transition: 0.4s;
     margin-right: 25vh;
 }
+.project-item:hover {
+    transform: scale(0.96);
+}
 .project-item.bread-store {
     background: #FF5851;
 }
@@ -725,7 +730,7 @@ section.skills {
     z-index: 3;
     color: #fff;
     font-weight: 600;
-    font-size: 3.5vh;
+    font-size: 1.3em;
     margin: auto;
     opacity: 0;
     transition: 0.4s;
@@ -735,6 +740,7 @@ section.skills {
     bottom: 3%;
     right: 3%;
     font-weight: 600;
+    font-size: 0.9em;
     color: white;
     z-index: 3;
     opacity: 0;
@@ -905,7 +911,7 @@ input::-webkit-inner-spin-button {
   
 .input-wrap {
     position: relative;
-    margin: 20px auto 0;
+    margin: 15px auto 0;
 }
   
 .input-wrap:first-child {
@@ -1343,7 +1349,7 @@ input[type="checkbox"] + label {
 
 
 /* CSS FOR RESPONSIVE///////////////////////////////////////// */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     /* CSS FOR MENU BAR*/
     .menu-bar img {
         width: 30px;
@@ -1354,8 +1360,7 @@ input[type="checkbox"] + label {
         left: 3vh;
     }
     .menu-bar ul.menu {
-        margin-left: 20px;
-        margin-top: -30px;
+        display: none;
     }
     .menu-section .logo {
         margin: 5vh 8vh;
@@ -1382,23 +1387,28 @@ input[type="checkbox"] + label {
         margin-left: 6vh;
     }
     .menu-question span:nth-child(2) {
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     .menu-question span:nth-child(3) {
-        font-size: 20px;
+        font-size: 1em;
+    }
+    .menu-question span:nth-child(3):hover {
+        font-size: 1.2em;
     }
     .menu-question span:nth-child(1) {
         float: left;
-        font-size: 25px;
+        font-size: 1.5em;
         margin-right: 20px;
     }
     .social-icons {
-        top: 45%;
-        right: 10px;
+        top: 92%;
+        right: 50%;
+        transform: translate(50%, 0);
     }
     .social-icons i {
-        width: 30px;
-        height: 30px;
+        float: left;
+        width: 40px;
+        height: 40px;
         line-height: 30px;
     }
     /*CSS FOR HEADER*/
@@ -1408,22 +1418,22 @@ input[type="checkbox"] + label {
     }
     .tlt-name {
         position: absolute;
-        top: 30%;
-        left: 50%;
-        transform: translate(-50%, -60%);
+        top: 45%;
+        left: 52%;
+        transform: translate(-50%, -55%);
         width: 80%;
     }
     .logo-white {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 35%;
-        transform: translateX(-50%);
+        top: 7%;
+        left: 80%;
+        width: 12%;
     }
     .subtitle {
-        top: 38%;
+        top: 52%;
+        left: 51%;
         transform: translate(-50%, -50%);
-        font-size: 3vh;
+        font-size: 1.25em;
     }
     
     .scale {
@@ -1443,12 +1453,12 @@ input[type="checkbox"] + label {
     }
     .tlt-about {
         margin-left: 2.5vh;
-        margin-top: 20%;
+        margin-top: 28%;
         font-size: 20px;
     }
     .about-field {
         margin-left: 2.5vh;
-        font-size: 30px;
+        font-size: 1.8em;
     }
     .about-wrapper {
         top: 0%;
@@ -1477,6 +1487,63 @@ input[type="checkbox"] + label {
     .scroll {
         display: none;
     }
+    .my-skill-mobile {
+        position: absolute;
+        z-index: 100;
+        top: 48%;
+        left: 55%;
+        opacity: 1;
+        display: block;
+        visibility: visible;
+        color: #ddd;
+        float: right;
+        transition: 0.8s;
+    }
+    .my-skill-mobile i {
+        display: inline-block;
+        margin-right: 5px;
+        animation: scaleY 0.7s infinite alternate;
+    }
+    .skills .container-fluid .row .col-sm-6:nth-child(1) {
+        display: none;
+    }
+    section.skills {
+        width: 100%;
+        height: 100%;
+    }
+    .front-end{
+        font-size: 1.4em;
+        margin-top: 15vh;
+        margin-bottom: 7vh;
+    }
+    .back-end {
+        font-size: 1.4em;
+        margin-bottom: 7vh;
+    }
+    .logoRow img {
+        width: 15%;
+        height: 15%;
+        float: left;
+        margin-right: 4vw;
+        margin-bottom: 8vh;
+    }
+    .other {
+        margin-right: 2vh;
+        font-size: 0.9em;
+        color: #ec3c3c;
+        font-weight: 600;
+    }
+    .other-skill {
+        display: inline-block;
+        padding: 0.4vh 0.8vh;
+        font-size: 0.7em;
+        border: solid 1px #dddddd;
+        border-radius: 2px;
+        margin-right: 1vh;
+        margin-bottom: 1vh;
+    }
+
+
     /*CSS FOR PROJECTS*/
 
     .projects-wrapper {
@@ -1511,9 +1578,137 @@ input[type="checkbox"] + label {
         width: 9vh;
         height: 9vh;
     }
+    /*CSS FOR CARD*/
+    .contact-form-wrapper .container-fluid .row .col-sm-6:nth-child(1) {
+        display: none;
+    }
+    .contact-form-wrapper {
+        top: 52%;
+    }
+    .input-wrap {
+        margin: 10px auto 0;
+    }
+    label {
+        font-size: 0.8em;
+    }
+    i.form-icon {
+        font-size: 1em;
+    }
+    ::-webkit-input-placeholder {
+        font-size: 0.75em;
+    }
+    button {
+        font-size: 0.75em;
+        line-height: 30px;
+        padding: 0px 20px;
+        padding-right: 10px;
+        height: 30px;
+        margin-top: 2vh;
+    }
+    .messages-success {
+        font-size: 0.8em;
+        left: 25%;
+    }
+    h2.contact-title {
+        color: #ddd;
+        font-size: 1.5em;
+        font-weight: bold;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        margin-top: 2vh;
+    }
+}
+@media screen and (min-width: 1367px) {
+    /* CSS FOR HEADER AND MENU////////////////// */
+
+    .menu-button {
+        left: 2.5vh;
+    }
+    ul.menu-list {
+        margin-left: 13.5vw;
+    }
+    ul.menu-list a {
+        font-size: 2.5em;
+        color: #dddddd;
+    }
+    .menu-bar ul.menu {
+        font-size: 0.9em;
+    }
+    .menu-contact {
+        margin-left: 13.5vw;
+        margin-top: 2vh;
+    }
+    .menu-question {
+        margin-top: 6vh;
+        margin-left: 14vw;
+    }
+    .menu-question span:nth-child(2) {
+        font-size: 1em;
+    }
+    .menu-question span:nth-child(3) {
+        font-size: 1.8em;
+    }
+    .menu-question span:nth-child(1) {
+        float: left;
+        font-size: 2.5em;
+        margin-right: 2.8vw;
+    }
+    .menu-question span:nth-child(3):hover {
+        font-size: 1.9em;
+    }
+    .social-icons i:hover {
+        color: rgb(182, 6, 0);
+        transform: scale(1.2);
+    }
+    .messages-success {
+        left: 12%;
+    }
+    .card {
+        margin-top: 10vh;
+    }
+
+
+    /* CSS FOR ABOUT PAGE////////////////////////////////////////////////////////////////////// */
+
+    /* CSS FOR ABOUT-HEADER////////////////////// */
+    .tlt-about {
+        font-size: 1.8em;
+    }
+    .about-field {
+        font-size: 3em;
+    }
+    .about-quote p {
+        font-size: 1.5em;
+    }
+    .logoRow img {
+        width: 12%;
+        height: 12%;
+        float: left;
+    }
+    .other {
+        margin-right: 2vh;
+        font-size: 2vh;
+    }
+    .disk1, .disk2 {
+        bottom: 25%;
+    }
+    .controlDisk {
+        top: 10%;
+    }
+    .front-end {
+        margin-top: 8vh;
+    }
+    /*CSS FOR PROJECT*/
+    .project-title {
+        font-size: 1.8em;
+    }
+    .project-tool {
+        font-size: 1.1em;
+    }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1824px) {
 
     /* CSS FOR HEADER AND MENU////////////////// */
 
@@ -1581,7 +1776,7 @@ input[type="checkbox"] + label {
         font-size: 60px;
     }
     .about-quote p {
-        font-size: 35px;
+        font-size: 1.8em;
     }
     .logoRow img {
         width: 12%;
@@ -1591,6 +1786,13 @@ input[type="checkbox"] + label {
     .other {
         margin-right: 2vh;
         font-size: 2vh;
+    }
+    /*CSS FOR PROJECT*/
+    .project-title {
+        font-size: 2em;
+    }
+    .project-tool {
+        font-size: 1.3em;
     }
 
 }
