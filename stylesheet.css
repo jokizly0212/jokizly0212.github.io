@@ -1605,9 +1605,12 @@ input[type="checkbox"] + label {
         height: 30px;
         margin-top: 2vh;
     }
+    .check-success {
+        left: 0;
+    }
     .messages-success {
         font-size: 0.8em;
-        left: 25%;
+        left: 15%;
     }
     h2.contact-title {
         color: #ddd;
