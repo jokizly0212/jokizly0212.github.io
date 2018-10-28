@@ -1557,7 +1557,7 @@ input[type="checkbox"] + label {
     .project-title {
         z-index: 3;
         color: #fff;
-        font-size: 2.5vh;
+        font-size: 2.3vh;
     }
     .project-tool {
         font-size: 0.65em;
@@ -1620,6 +1620,9 @@ input[type="checkbox"] + label {
         width: 100%;
         text-align: center;
         margin-top: 2vh;
+    }
+    .loading-screen.contact {
+        display: none;
     }
 }
 @media (max-width: 1024px) and (min-width: 600px) {
@@ -1843,7 +1846,7 @@ input[type="checkbox"] + label {
     .project-title {
         z-index: 3;
         color: #fff;
-        font-size: 2.5vh;
+        font-size: 2.3vh;
     }
     .project-tool {
         font-size: 0.65em;
@@ -1908,6 +1911,9 @@ input[type="checkbox"] + label {
         text-align: center;
         margin-bottom: 2vh;
         margin-top: 1vh;
+    }
+    .loading-screen.contact {
+        display: none;
     }
 }
 @media screen and (min-width: 1440px) {
