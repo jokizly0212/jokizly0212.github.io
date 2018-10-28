@@ -546,7 +546,7 @@ section.skills {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.4s;
-    cursor: url('images/hand.svg'), pointer;
+    cursor: grabbing;
 }
 .drag-wrapper {
     position: absolute;
