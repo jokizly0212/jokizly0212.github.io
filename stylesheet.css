@@ -1433,7 +1433,7 @@ input[type="checkbox"] + label {
         top: 52%;
         left: 51%;
         transform: translate(-50%, -50%);
-        font-size: 1.25em;
+        font-size: 1em;
     }
     
     .scale {
