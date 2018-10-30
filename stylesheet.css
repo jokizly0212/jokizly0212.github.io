@@ -213,6 +213,25 @@ ul.menu-list a.active {
     color: #FF5851;
     text-decoration: overline;
 }
+.cv-button {
+    color: #ddd!important;
+    margin-left: 5vw;
+    padding: 1vh 2vh;
+    background: linear-gradient(45deg, rgba(255,38,0,1) 0%, rgba(39,39,230,1) 100%);
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+.cv-button i {
+    margin-left: 1vh;
+    font-size: 1.3em;
+}
+.cv-button:hover {
+    background: linear-gradient(45deg, rgba(39,39,230,1) 0%, rgba(255,38,0,1) 100%);
+    text-decoration: none;
+}
 .menu-contact {
     color: #dddddd;
     margin-left: 14vw;
@@ -337,7 +356,7 @@ section.header {
 
 /* CSS FOR ABOUT HEADER////////    */
 section.about.header {
-    background: #161616!important;
+    background: #030000!important;
 }
 .tlt-about {
     margin-left: 8vw;
@@ -373,6 +392,12 @@ section.about.header {
     z-index: 2;
     opacity: 0;
     transform-origin: 0% 0%;
+}
+.img-about {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    right: 15%;
 }
 .about-quote p b {
     color: #FF5851;
@@ -812,6 +837,26 @@ section.skills {
     border-bottom: 1px solid red;
     background: #fff0b2;
     text-decoration: underline;
+}
+.telephone {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact-title {
+    display: none;
+}
+.contact-title-lg {
+    font-size: 2em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+    transform: translate(0%, -50%);
+    color: #ddd;
+    font-weight: 600;
 }
 
 /* CSS FOR CARD FORM/////////////////// */
@@ -1383,6 +1428,11 @@ input[type="checkbox"] + label {
         font-weight: 400;
         font-size: 12px;
     }
+    .cv-button {
+        transform: translateY(50%);
+        font-size: 0.7em;
+        margin-left: 5vh;
+    }
     .menu-question {
         margin-left: 6vh;
     }
@@ -1654,6 +1704,14 @@ input[type="checkbox"] + label {
     .menu-contact {
         font-size: 1.5em;
         margin-left: 10vh;
+    }
+    .cv-button {
+        display: block;
+        width: 150px;
+        text-align: center;
+        transform: translateY(50%);
+        font-size: 0.7em;
+        margin-left: 0;
     }
     .menu-contact span {
         display: block;
@@ -2090,6 +2148,10 @@ input[type="checkbox"] + label {
     }
     .project-tool {
         font-size: 1.3em;
+    }
+    /*CSS FOR CONTACT*/
+    .contact-title-lg {
+        font-size: 3em;
     }
 
 }
