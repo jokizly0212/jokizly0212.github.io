@@ -285,7 +285,7 @@ span.phone, span.email {
     right: 0;
     transform: translateY(-50%);
 }
-.social-icons i {
+.social-icons a {
     display: block;
     width: 2.5vw;
     height: 5vh;
@@ -293,9 +293,11 @@ span.phone, span.email {
     line-height: 5vh;
     cursor: pointer;
     transition: 0.4s;
+    color: #ddd!important;
 }
-.social-icons i:hover {
-    color: #FF5851;
+.social-icons a:hover {
+    text-decoration: none;
+    color: #FF5851!important;
     transform: scale(1.1);
 }
 
@@ -1475,7 +1477,7 @@ input[type="checkbox"] + label {
         right: 50%;
         transform: translate(50%, 0);
     }
-    .social-icons i {
+    .social-icons a {
         float: left;
         width: 40px;
         height: 40px;
@@ -1694,6 +1696,9 @@ input[type="checkbox"] + label {
     .loading-screen.contact {
         display: none;
     }
+    .social-icons a {
+        display: none;
+    }
 }
 @media (max-width: 1024px) and (min-width: 600px) {
     /* CSS FOR MENU BAR*/
@@ -1760,7 +1765,7 @@ input[type="checkbox"] + label {
         right: 50%;
         transform: translate(50%, 0);
     }
-    .social-icons i {
+    .social-icons a {
         font-size: 1.5em;
         float: left;
         width: 60px;
@@ -1993,6 +1998,9 @@ input[type="checkbox"] + label {
     .loading-screen.contact {
         display: none;
     }
+    .social-icons a {
+        display: none;
+    }
 }
 @media screen and (min-width: 1440px) {
     /* CSS FOR HEADER AND MENU////////////////// */
@@ -2032,7 +2040,7 @@ input[type="checkbox"] + label {
     .menu-question .leave-message:hover {
         font-size: 1.9em;
     }
-    .social-icons i:hover {
+    .social-icons a:hover {
         color: rgb(182, 6, 0);
         transform: scale(1.2);
     }
@@ -2126,10 +2134,10 @@ input[type="checkbox"] + label {
     .menu-question .leave-message:hover {
         font-size: 2.1em;
     }
-    .social-icons i {
+    .social-icons a {
         width: 45px;
     }
-    .social-icons i:hover {
+    .social-icons a:hover {
         color: rgb(182, 6, 0);
         transform: scale(1.1);
     }
