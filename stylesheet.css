@@ -257,12 +257,14 @@ span.phone, span.email {
     font-weight: 300;
     font-size: 1em;
 }
-.menu-question span:nth-child(3) {
+.menu-question .leave-message {
     font-weight: bold;
     font-size: 1.5em;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.4s;
+    text-decoration: none;
+    color: #ddd;
 }
 .menu-question span:nth-child(1) {
     float: left;
@@ -272,7 +274,7 @@ span.phone, span.email {
 .menu-question:hover .arrow  {
     animation: arrow-animation 0.7s infinite;
 }
-.menu-question span:nth-child(3):hover {
+.menu-question .leave-message:hover {
     font-size: 1.6em;
 }
 .social-icons {
@@ -1457,10 +1459,10 @@ input[type="checkbox"] + label {
     .menu-question span:nth-child(2) {
         font-size: 0.7em;
     }
-    .menu-question span:nth-child(3) {
+    .menu-question .leave-message {
         font-size: 1em;
     }
-    .menu-question span:nth-child(3):hover {
+    .menu-question .leave-message:hover {
         font-size: 1.2em;
     }
     .menu-question span:nth-child(1) {
@@ -1742,10 +1744,10 @@ input[type="checkbox"] + label {
     .menu-question span:nth-child(2) {
         font-size: 1em;
     }
-    .menu-question span:nth-child(3) {
+    .menu-question .leave-message {
         font-size: 2em;
     }
-    .menu-question span:nth-child(3):hover {
+    .menu-question .leave-message:hover {
         font-size: 2.1em;
     }
     .menu-question span:nth-child(1) {
@@ -2019,7 +2021,7 @@ input[type="checkbox"] + label {
     .menu-question span:nth-child(2) {
         font-size: 1em;
     }
-    .menu-question span:nth-child(3) {
+    .menu-question .leave-message {
         font-size: 1.8em;
     }
     .menu-question span:nth-child(1) {
@@ -2027,7 +2029,7 @@ input[type="checkbox"] + label {
         font-size: 2.5em;
         margin-right: 2.8vw;
     }
-    .menu-question span:nth-child(3):hover {
+    .menu-question .leave-message:hover {
         font-size: 1.9em;
     }
     .social-icons i:hover {
@@ -2113,7 +2115,7 @@ input[type="checkbox"] + label {
     .menu-question span:nth-child(2) {
         font-size: 1.2em;
     }
-    .menu-question span:nth-child(3) {
+    .menu-question .leave-message {
         font-size: 2em;
     }
     .menu-question span:nth-child(1) {
@@ -2121,7 +2123,7 @@ input[type="checkbox"] + label {
         font-size: 3em;
         margin-right: 3vw;
     }
-    .menu-question span:nth-child(3):hover {
+    .menu-question .leave-message:hover {
         font-size: 2.1em;
     }
     .social-icons i {
