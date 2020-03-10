@@ -228,7 +228,6 @@ ul.menu-list a.active {
 }
 .cv-button {
     color: #ddd!important;
-    margin-left: 5vw;
     padding: 1vh 2vh;
     background: linear-gradient(45deg, rgba(255,38,0,1) 0%, rgba(39,39,230,1) 100%);
     display: inline-block;
@@ -982,7 +981,7 @@ section.about {
         top: 15%;
     }
     .images-container {
-        top: 60%;
+        top: 65%;
     }
     .schedule-container {
         display: none;
@@ -991,9 +990,6 @@ section.about {
         top: 5%;
         left: 85%;
         font-size: 2rem;
-    }
-    .menu-question {
-        margin-left: 30px;
     }
     .cv-button {
         margin-top: 40px;
@@ -1125,7 +1121,7 @@ section.about {
         margin-top: 100px;
     }
 }
-@media only screen and (max-width: 2440px) {
+@media only screen and (min-width: 1025px) {
     section.header .title {
         font-size: 1.2rem;
     }
