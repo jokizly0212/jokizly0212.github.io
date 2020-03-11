@@ -1251,6 +1251,13 @@ section.about {
         margin-top: 100px;
     }
 }
+@media only screen and (max-width: 1024px) {
+    .scroll,
+    .cursor-circle {
+        opacity: 0;
+        visibility: hidden;
+    }
+
 
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     section.header .title {
