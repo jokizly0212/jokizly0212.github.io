@@ -8,7 +8,48 @@ html, body {
     background: #010102;
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    cursor: url('./images/cursor.png'), crosshair;
 }
+.cursor {
+    position: fixed;
+    top: -1rem;
+    left: -1rem;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 1000;
+    text-align: center;
+}
+.cursor div:first-child {
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid rgb(88, 88, 219);
+    transition: transform 0.5s ease, opacity 0.35s ease;
+}
+.cursor.is-active div:first-child {
+    transform: scale(1.8);
+    opacity: 0.3;
+    background: #FF5851;
+    border: none;
+}
+.cursor.is-active .scroll {
+    opacity: 0;
+}
+.scroll {
+    font-size: .8rem;
+    color: #ddd;
+    font-weight: 700;
+    transition: transform 0.5s ease, opacity 0.35s ease;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+.txt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
 ::-webkit-scrollbar {
     display: none;
     width: 10px;
@@ -151,11 +192,11 @@ html, body {
     left: 3vh;
     z-index: 1000;
     transform: translateY(-50%);
-    cursor: pointer;
+    cursor: none;
 }
 .menu-button img {
     width: 4.7vh;
-    cursor: pointer;
+    cursor: none;
 }
 .menu-button ul.menu li {
     list-style-type: none;
@@ -200,7 +241,7 @@ html, body {
     left: 3vh;
     transform: translateY(-50%);
     font-size: 3em;
-    cursor: pointer;
+    cursor: none;
 }
 .close-button:hover {
     color: #FF5851;
@@ -210,7 +251,7 @@ ul.menu-list {
     margin-left: 14vw;
 }
 ul.menu-list a {
-    cursor: pointer;
+    cursor: none;
     font-size: 2em;
     padding-top: 1vh;
     list-style-type: none;
@@ -232,7 +273,7 @@ ul.menu-list a.active {
     background: linear-gradient(45deg, rgba(255,38,0,1) 0%, rgba(39,39,230,1) 100%);
     display: inline-block;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: none;
     transform: translateY(-50%);
     transition: 0.4s;
     font-weight: 700;
@@ -291,27 +332,53 @@ span.phone, span.email {
     font-size: 1.6em;
 }
 .social-icons {
-    position: absolute;
-    z-index: 1000;
+    position: fixed;
+    z-index: 10011;
     color: #dddddd;
-    top: 50%;
-    right: 15px;
+    top: 35%;
+    right: 50px;
     transform: translateY(-50%);
 }
-.social-icons a {
+.social-icons::before {
+    content: '';
+    width: 2px;
+    height: 5vh;
+    background: #fff;
+    position: absolute;
+    bottom: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .5;
+}
+.social-icons .social-top, .social-icons i {
     display: block;
-    width: 2.5vw;
+    width: 2vw;
     height: 5vh;
     text-align: center;
     line-height: 5vh;
-    cursor: pointer;
+    cursor: none;
     transition: 0.4s;
     color: #ddd!important;
+    font-size: 1.5rem;
+    opacity: .5;
 }
 .social-icons a:hover {
     text-decoration: none;
     color: #FF5851!important;
-    transform: scale(1.1);
+    transform: scale(1.5);
+    opacity: 1;
+}
+.social-icons i {
+    position: absolute;
+    bottom: -80%;
+    border-radius: 50%;
+    background: rgb(88, 88, 219);
+    width: 2vw;
+    height: 2vw;
+    line-height: 2vw;
+    opacity: 1;
+    transform: rotate(-25deg);
+    cursor: none;
 }
 
 
@@ -500,11 +567,12 @@ section.about {
     color: #dddddd;
     font-size: 2rem;
     font-weight: bold;
-    cursor: pointer;
+    cursor: none;
 }
 .skills div {
     margin-bottom: 20px;
     opacity: .3;
+    cursor: none;
 }
 .skills div.active {
     opacity: 1;
@@ -584,7 +652,7 @@ section.about {
     font-weight: bold;
     color: #010102;
     transition: .3s;
-    cursor: pointer;
+    cursor: none;
     text-shadow:
      -1px -1px 0 #fff,  
       1px -1px 0 #fff,
@@ -668,6 +736,7 @@ section.about {
 .site-link:hover {
     text-decoration: none;
     color: #ddd;
+    cursor: none;
 }
 .site-link:hover:before {
     width: 10%;
@@ -716,7 +785,7 @@ section.about {
     font-size: 6rem;
     color: #ddd;
     margin-left: 100px;
-    cursor: pointer;
+    cursor: none;
     text-decoration: none;
 }
 .dribbble a::before, .instagram a::before {
@@ -1121,7 +1190,19 @@ section.about {
         margin-top: 100px;
     }
 }
-@media only screen and (min-width: 1025px) {
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    section.header .title {
+        font-size: 1.2rem;
+    }
+    .images-container {
+        top: 60%;
+    }
+    .images-wrapper img {
+        height: 55vh;
+    }
+}
+@media only screen and (max-width: 1920px) and (min-width: 1024px) {
     section.header .title {
         font-size: 1.2rem;
     }
@@ -1133,6 +1214,11 @@ section.about {
     }
     .schedule-container {
         width: 80%;
+    }
+}
+@media only screen and (max-width: 2440px) and (min-width: 1921px) {
+    .schedule-container {
+        width: 40%;
     }
 }
 
