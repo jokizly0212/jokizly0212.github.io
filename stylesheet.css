@@ -258,14 +258,28 @@ ul.menu-list a {
     color: #dddddd;
     font-weight: 700;
     display: block;
+    width: fit-content;
     text-decoration: none;
+    position: relative;
 }
-ul.menu-list a:hover {
+.menu-list a::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: rgb(88, 88, 219);
+    bottom: 10px;
+    transition: .4s;
+    z-index: -1;
+}
+.menu-list a.active::before {
+    width: 0%;
+}
+.menu-list a.active {
     color: #FF5851;
 }
-ul.menu-list a.active {
-    color: #FF5851;
-    text-decoration: overline;
+.menu-list a:hover::before {
+    width: 10%;
 }
 .cv-button {
     color: #ddd!important;
