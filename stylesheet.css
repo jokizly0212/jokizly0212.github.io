@@ -405,6 +405,7 @@ section.header .title {
     top: 12%;
     left: 50%;
     transform: translateX(-50%);
+    animation: slideInUpMargin .8s forwards;
 }
 .schedule-container {
     width: 30%;
@@ -463,6 +464,8 @@ ul.schedule-title {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    animation: zoomOut .7s forwards;
+    animation-delay: .2s;
 }
 .images-wrapper img {
     opacity: 0;
@@ -502,9 +505,11 @@ section.about {
 }
 .description-left {
     flex: 40%;
+    animation: slideRightTrans .7s forwards;
 }
 .description-right {
     flex: 60%;
+    animation: slideLeftTrans .7s forwards;
 }
 .about-me-title {
     font-size: 1.2rem;
@@ -618,6 +623,7 @@ section.about {
 .projects-container {
     position: relative;
     z-index: 999;
+    animation: slideInUp 1s forwards;
 }
 .project {
     margin-top: 50px;
@@ -658,6 +664,7 @@ section.about {
       1px -1px 0 #fff,
       -1px 1px 0 #fff,
        1px 1px 0 #fff;
+
 }
 .project-title::selection {
     color: none;
@@ -812,6 +819,60 @@ section.about {
     padding-right: 15%;
 }
 /* CSS FOR ANIMATION///////////////// */
+@keyframes slideInUp {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes slideInUpMargin {
+    0% {
+        margin-top: 200px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+@keyframes zoomOut {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes slideRightTrans {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeftTrans {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 @keyframes slideRight {
     0% {
         margin-left: 100px;

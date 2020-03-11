@@ -5,11 +5,12 @@ $(function () {
     var scheduleCounter = 0;
     var scheduleProgressWidth = 10;
     var isScroll = true
+
  
-    // $(window).on('load', function () {
-    //     $('.preloader').addClass('complete');
-    //     $('.lds-ripple , .logo-loading').addClass('dissappear');
-    // });
+    $(window).on('load', function () {
+        $('.preloader').addClass('complete');
+        $('.lds-ripple , .logo-loading').addClass('dissappear');
+    });
     $('.menu').click(function () {
         $('.nav').toggleClass('animated');
         $('.nav').toggleClass('slideInRight');
